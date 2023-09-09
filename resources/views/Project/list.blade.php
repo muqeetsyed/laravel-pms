@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Employee List</title>
+    <title>Project list </title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
 </head>
 <body>
     <div class="card">
@@ -20,23 +19,26 @@
 
 
         <p>
-            <a href="{{ route('index') }}">|^|Back|^|</a>
+            <a href="{{ route('index') }}">|<<|Back|>>|</a>
         </p>
 
+
         <p>
-            <strong>---------------Employees-----------------</strong>
-            <a href="{{ route('add_employee') }}">|^|Add|^|</a>
+            <strong>---------------Projects-----------------</strong>
+            <a href="{{ route('project.create') }}">|<<|Add|>>|</a>
         </p>
 
         <ul>
             @foreach ($records as $record)
                 <li>
-                    <a href="{{ route('employee.edit', ['slug' => $record->id]) }}">
-                        {{ $record->name }}
+                    <a href="{{ route('project.edit', ['id' => $record->id]) }}">
+                        {{ $record->title }}
                     </a>
                 </li>
             @endforeach
         </ul>
+
+
     </div>
 </body>
 </html>

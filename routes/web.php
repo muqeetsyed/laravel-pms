@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ProjectController;
 use App\Models\Employee;
+use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,7 +31,21 @@ Route::get('employees', function(){
 Route::get('/employee/create', [EmployeeController::class, 'createEmployee'])->name("add_employee");
 Route::post('/employee/store', [EmployeeController::class, 'storeEmployee'])->name('store.employee');
 Route::get('employee/{slug}', [EmployeeController::class, 'editEmployee'])->name("employee.edit");
-
-
 Route::post('employee/update/{slug}', [EmployeeController::class, 'updateEmployee'])->name('employee.update');
 Route::get('remove-employee/{slug}', [EmployeeController::class, 'removeEmployee'])->name('employee.remove');
+
+
+Route::get('projects', function(){
+    return view('Project.list', [
+        'records' => Project::all(),
+    ]);
+})->name("peoject.list");
+
+Route::get('/project/create', [ProjectController::class, 'create'])->name("project.create");
+Route::post('/project/store', [ProjectController::class, 'store'])->name("project.store");
+Route::get('/project/{id}/edit', [ProjectController::class, 'edit'])->name("project.edit");
+Route::put('/project/{id}', [ProjectController::class, 'update'])->name("project.update");
+
+
+
+

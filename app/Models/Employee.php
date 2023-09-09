@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Enums\EmployeeRole;
 use Illuminate\Database\Eloquent\Casts\Attribute;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Model;
 
 
@@ -39,8 +39,9 @@ class Employee extends Model
        return Attribute::make(
         set: fn (string $value) => \ucfirst($value)
        );
-
     }
 
-
+    public function projects(): BelongsToMany {
+        return $this->belongsToMany(Project::class, 'employee_project');
+    }
 }

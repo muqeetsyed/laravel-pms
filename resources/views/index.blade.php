@@ -12,6 +12,9 @@
         <p>
             <a href='/employees'>List Employees</a>
         </p>
+        <p>
+            <a href='/projects'>List Projects</a>
+        </p>
     </div>
 </body>
 </html>
