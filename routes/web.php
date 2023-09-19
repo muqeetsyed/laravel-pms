@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\SubProjectController;
 use App\Models\Employee;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
@@ -45,6 +46,13 @@ Route::get('/project/create', [ProjectController::class, 'create'])->name("proje
 Route::post('/project/store', [ProjectController::class, 'store'])->name("project.store");
 Route::get('/project/{id}/edit', [ProjectController::class, 'edit'])->name("project.edit");
 Route::put('/project/{id}', [ProjectController::class, 'update'])->name("project.update");
+
+Route::get('/subproject/{projectId}/create', [SubProjectController::class, 'create'])->name("subproject.create");
+Route::post('/subproject/store', [SubProjectController::class, 'store'])->name("subproject.store");
+
+
+
+
 
 
 
