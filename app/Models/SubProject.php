@@ -14,4 +14,8 @@ class SubProject extends Model
     public function attachments():HasMany {
         return $this->hasMany(Attachment::class, 'sub_project_id',);
     }
+
+    public function employees():BelongsToMany {
+        return $this->belongsToMany(Employee::class, 'employee_sub_projects', 'sub_project_id', 'employee_id');
+    }
 }

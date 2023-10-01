@@ -49,6 +49,9 @@ Route::put('/project/{id}', [ProjectController::class, 'update'])->name("project
 
 Route::get('/subproject/{projectId}/create', [SubProjectController::class, 'create'])->name("subproject.create");
 Route::post('/subproject/store', [SubProjectController::class, 'store'])->name("subproject.store");
+Route::get('/subproject/{id}/edit', [SubProjectController::class, 'edit'])->name("subproject.edit");
+
+Route::get('/downloadFile{file}', [SubProjectController::class, 'downloadFile'])->name("subproject.download.attachment");
 
 
 

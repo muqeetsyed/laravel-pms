@@ -1,9 +1,8 @@
 <?php
 
-
 namespace App\DTO;
 
-class ProjectDetails
+final class ProjectDetails
 {
     public function __construct(
         public string $id,
