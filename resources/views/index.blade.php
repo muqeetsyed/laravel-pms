@@ -1,3 +1,6 @@
+@extends('base')
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project Management System</title>
 </head>
+
+
 <body>
     <div>
+
+        <h1 class="md-typescale-display-medium">Hello Material!</h1>
+        <h1>Hello Material!</h1>
+
         <span>Welcome!</span>
         <p>
             <a href='/employees'>List Employees</a>
