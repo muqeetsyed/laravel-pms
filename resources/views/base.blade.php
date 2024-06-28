@@ -24,6 +24,7 @@
         border-radius: 8px;
       }
     </style>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="container">
 
