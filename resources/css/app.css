@@ -2,9 +2,9 @@
     --mdc-theme-primary: #6200ee;
     --mdc-theme-secondary: #03dac6;
     --mdc-theme-background: #e2b7b7; /* Custom background color */
-    --md-sys-color-primary-container: #e0b2c9; /* Defining the primary container color */
+    --md-sys-color-primary-container: #000000; /* Defining the primary container color */
     --md-sys-color-inverse-on-surface: #f7f4ef;
-    --md-sys-color-surface-dim: #662bdb5e;
+    --md-sys-color-surface-dim: #003655;
 }
 
 .container {

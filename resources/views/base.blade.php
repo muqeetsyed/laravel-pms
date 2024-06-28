@@ -19,7 +19,7 @@
     <style>
       .primary-container {
         background-color: var(--md-sys-color-primary-container);
-        color: black; /* Contrast text color */
+        color: rgb(40, 168, 121); /* Contrast text color */
         padding: 16px;
         border-radius: 8px;
       }
