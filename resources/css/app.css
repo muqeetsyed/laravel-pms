@@ -1,19 +1,9 @@
-<<<<<<< Updated upstream
-:root {
-    --mdc-theme-primary: #6200ee;
-    --mdc-theme-secondary: #03dac6;
-    --mdc-theme-background: #e2b7b7; /* Custom background color */
-    --md-sys-color-primary-container: #000000; /* Defining the primary container color */
-    --md-sys-color-inverse-on-surface: #f7f4ef;
-    --md-sys-color-surface-dim: #003655;
-}
-
-.container {
-    background: var(--md-sys-color-surface-dim);
-=======
 body {
     background-image: url("/resources/images/pms.webp");
     background-color: bisque;
     height: 90vh;
->>>>>>> Stashed changes
+}
+
+nav {
+    height: 10vh;
 }
