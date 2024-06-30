@@ -7,19 +7,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!-- Additional inline styles -->
-<<<<<<< Updated upstream
-    <style>
-      .primary-container {
-        background-color: var(--md-sys-color-primary-container);
-        color: black; /* Contrast text color */
-        padding: 16px;
-        border-radius: 8px;
-      }
-    </style>
-=======
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
->>>>>>> Stashed changes
 </head>
 <body class="container-fluid  rounded">
 
