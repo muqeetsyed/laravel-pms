@@ -1,40 +1,22 @@
 @extends('base')
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project Management System</title>
-
-
-    <style>
-        .primary-container {
-            background-color: var(--md-sys-color-primary-container);
-            color: black; /* Contrast text color */
-            padding: 16px;
-            border-radius: 8px;
-        }
-    </style>
-
-</head>
-
-
 <body>
-    <div class="primary-container">
-
-        <h1 class="md-typescale-display-medium">Hello Material!</h1>
-        <h1>Hello Material!</h1>
-
-        <span>Welcome!</span>
-        <p>
-            <a href='/employees'>List Employees</a>
-        </p>
-        <p>
-            <a href='/projects'>List Projects</a>
-        </p>
-    </div>
+    <nav class="nav justify-content-center">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/employees">List Employees</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/projects">List Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
