@@ -188,4 +188,3 @@ class SubProjectController extends Controller
         return response()->download(public_path('assets/'.$file));
     }
 }
-
