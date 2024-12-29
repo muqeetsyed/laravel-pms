@@ -1,4 +1,4 @@
-Learn Laravel by build project management system
+Learn Laravel by building project management system
 
   Setup project in your local machine, make sure you have installed docker in your local machine, then start by following below commands in the root project directory,
 
