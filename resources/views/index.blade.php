@@ -1,6 +1,5 @@
 @extends('base')
 
-
 <body>
     <nav class="nav justify-content-center">
         <ul class="nav nav-tabs">
